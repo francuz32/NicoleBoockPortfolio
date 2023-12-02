@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NicoleBoock</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/mobile.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/IMG/Nicole Boock Logo.png" class="logo" />
+          <ul id="sidemenu">
+            <!-- Nav Option -->
+            <li>
+              <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+            </li>
+            <li><a href="#about" onclick="closemenu()">Sobre mí</a></li>
+            <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+
+            <!-- Change Language -->
+            <li>
+              <a href="indexFR.html"><img src="" alt="bandera Fr" /></a>
+            </li>
+            <li>
+              <a href="indexEN.html"><img src="" alt="banderia RU" /></a>
+            </li>
+          </ul>
+
+          <!-- Menu Bar for Small Devices -->
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Traductora, intérprete y profesora</p>
+          <h1>
+            Hola,<br />
+            soy <span>Nicole</span> Boock
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/IMG/Nicole Boock Picture.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Sobre mí</h1>
+            <p>
+              Soy Nicole, traductora, intérprete y profesora de idiomas...
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Habilidades
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experiencia
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Educación</p>
+              <p class="tab-links" onclick="opentab('education')">
+                Descargar CV
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Traductora</span><br />Traduzco textos</li>
+                <li><span>Intérprete</span><br />Interpreto en reuniones</li>
+                <li><span>Profesora</span><br />Enseño idiomas</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023</span><br />Juegos Panamericanos y
+                  Parapanamericanos Santiago 2023
+                </li>
+                <li>
+                  <span>2011</span><br />Clases de francés
+                </li>
+                <li><span>2013</span><br />Traduccion de textos</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2005</span><br />EATRI</li>
+                <li>
+                  <span>2006</span><br />Web App Development/App Interfaces
+                </li>
+                <li><span>2007</span><br />Building Android/iOS Apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div id="services">
+      <div class="container hidden">
+        <h1 class="sub-title">Mis servicios</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Traducción de textos</h2>
+            <p>
+              Traduzco textos
+            </p>
+            <a href="#">Ver más</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>Interpretación</h2>
+            <p>
+              Interpreto en reuniones
+            </p>
+            <a href="#">Ver más</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Clases de idiomas</h2>
+            <p>
+              Enseño idiomas
+            </p>
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">
+            Portafolio
+        </h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/IMG/Nicole Boock’s Work.png" alt="" />
+            <div class="layer">
+              <h3>Interpreter</h3>
+              <p>Interpreting for the Goalball DTI in the venue</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/IMG/Nicole Boock’s Work.png" alt="" />
+            <div class="layer">
+              <h3>Traducción médica</h3>
+              <p>App to help you find great people</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/IMG/Nicole Boock’s Work.png" alt="" />
+            <div class="layer">
+              <h3>Clases de francés</h3>
+              <p>App to help you find great people</p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- This button might be used now or in the future - Check with Nicole -->
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+     <!-- Contact -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <a href="mailto:nboock.translator@gmail.com"><p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com</p></a>
+                    <a href="tel:+56962008751"><p><i class="fa-solid fa-phone"></i> +56962008751</p></a>
+                    <a href="https://www.youtube.com" target="_blank"><p><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+                    <!-- <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    </div> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Dirección de correo" required>
+                        <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a1f070a8c1.js"
+      crossorigin="anonymous"></script>
+
+      <script src="/scripts/scripts.js"></script>
+     
+     <script>
+            const observer = new IntersectionObserver((entries) =>{
+        entries.forEach((entry) =>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            }else{
+                entry.target.classList.remove("show");
+            }
+        })
+    }
+    );
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+      </script>
+
+</html>
