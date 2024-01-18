@@ -1,238 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NicoleBoock</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/mobile.css" />
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="/IMG/Nicole Boock Logo.png" class="logo" />
-          <ul id="sidemenu">
-            <!-- Nav Option -->
-            <li>
-              <a href="#header" class="home" onclick="closemenu()">Inicio</a>
-            </li>
-            <li><a href="#about" onclick="closemenu()">Sobre mí</a></li>
-            <li><a href="#services" onclick="closemenu()">Servicios</a></li>
-            <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
-            <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
-            <i class="fa-solid fa-x" onclick="closemenu()"></i>
 
-            <!-- Change Language -->
-            <li>
-              <a href="indexFR.html"><img src="" alt="bandera Fr" /></a>
-            </li>
-            <li>
-              <a href="indexEN.html"><img src="" alt="banderia RU" /></a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NicoleBoock</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/mobile.css" />
+  <link rel="icon" href="/IMG/Favicon - NB.png">
+</head>
 
-          <!-- Menu Bar for Small Devices -->
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Traductora, intérprete y profesora</p>
-          <h1>
-            Hola,<br />
-            soy <span>Nicole</span> Boock
-          </h1>
-        </div>
-      </div>
-    </div>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/IMG/Logo - NB.png" class="logo" />
+        <ul id="sidemenu">
+          <!-- Nav Option -->
+          <li>
+            <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+          </li>
+          <li><a href="#about" onclick="closemenu()">Sobre mí</a></li>
+          <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+          <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+          <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+          <i class="fa-solid fa-x" onclick="closemenu()"></i>
 
-    <!-- ABOUT -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="/IMG/1.jpg" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">Sobre mí</h1>
-            <p>
-              Soy Nicole, traductora, intérprete y profesora de idiomas...
-            </p>
+          <!-- Change Language -->
+          <li>
+            <a href="indexFR.html"><img src="" alt="bandera Fr" /></a>
+          </li>
+          <li>
+            <a href="indexEN.html"><img src="" alt="banderia RU" /></a>
+          </li>
+        </ul>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Habilidades
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experiencia
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Educación</p>
-              <p class="tab-links" onclick="opentab('education')">
-                Descargar CV
-              </p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Traductora</span><br />Traduzco textos</li>
-                <li><span>Intérprete</span><br />Interpreto en reuniones</li>
-                <li><span>Profesora</span><br />Enseño idiomas</li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2023</span><br />Juegos Panamericanos y
-                  Parapanamericanos Santiago 2023
-                </li>
-                <li>
-                  <span>2011</span><br />Clases de francés
-                </li>
-                <li><span>2013</span><br />Traduccion de textos</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2005</span><br />EATRI</li>
-                <li>
-                  <span>2006</span><br />Web App Development/App Interfaces
-                </li>
-                <li><span>2007</span><br />Building Android/iOS Apps</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SERVICES -->
-
-    <div id="services">
-      <div class="container hidden">
-        <h1 class="sub-title">Mis servicios</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Traducción de textos</h2>
-            <p>
-              Traduzco textos
-            </p>
-            <a href="#">Ver más</a>
-          </div>
-          <div>
-            <i class="fa-sharp fa-solid fa-crop"></i>
-            <h2>Interpretación</h2>
-            <p>
-              Interpreto en reuniones
-            </p>
-            <a href="#">Ver más</a>
-          </div>
-          <div>
-            <i class="fa-brands fa-app-store-ios"></i>
-            <h2>Clases de idiomas</h2>
-            <p>
-              Enseño idiomas
-            </p>
-            <a href="#">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">
-            Portafolio
+        <!-- Menu Bar for Small Devices -->
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Traductora, intérprete y profesora</p>
+        <h1>
+          Hola,<br />
+          soy <span>Nicole</span> Boock
         </h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="/IMG/Nicki1.jpg" alt="" />
-            <div class="layer">
-              <h3>Interpreter</h3>
-              <p>Interpreting for the Goalball DTI in the venue</p>
-              <a href=""
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="/IMG/Nicki2.jpg" alt="" />
-            <div class="layer">
-              <h3>Traducción médica</h3>
-              <p>App to help you find great people</p>
-              <a href=""
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="/IMG/Nicki3.jpg" alt="" />
-            <div class="layer">
-              <h3>Clases de francés</h3>
-              <p>App to help you find great people</p>
-              <a href=""
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- This button might be used now or in the future - Check with Nicole -->
-        <a href="#" class="btn">See More</a>
+        <br>
+        <p>Te puedo ayudar con <br> tus <span>proyectos lingüísticos</span></p>
       </div>
     </div>
+  </div>
 
-     <!-- Contact -->
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/IMG/1.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Acerca de mí</h1>
 
-     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contacto</h1>
-                    <a href="mailto:nboock.translator@gmail.com"><p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com</p></a>
-                    <a href="tel:+56962008751"><p><i class="fa-solid fa-phone"></i> +56962008751</p></a>
-                    <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank"><p><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
-                    <!-- <div class="social-icons">
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Habilidades
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experiencia
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Educación</p>
+            <p class="tab-links">
+              <a
+                href="https://docs.google.com/document/d/1rmzvwrIjUuEo07T2dJE-0nJ1QnEmZwDf/edit?usp=drive_link&ouid=118063310771638022260&rtpof=true&sd=true">
+                Descargar CV</a>
+            </p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <p>Mis habilidades principales son: </p>
+            <ul>
+              <li><span>Lingüística</span><br />Traduzco textos</li>
+              <li><span>Traducción</span><br />Interpreto en reuniones</li>
+              <li><span>Interpretación</span><br />Enseño idiomas</li>
+              <li><span>Docencia</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Subtitulado</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+              <li><span>Localización</span><br />Enseño idiomas</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <p>Entre mis experiencias, puedes encontrar:</p>
+            <ul>
+              <li>
+                <span>2020</span><br />Traductora e intérprete
+                <br>
+                Dico Partners SpA.- Kotra
+              </li>
+              <li>
+                <span>2021</span><br />Profesora asistente de español
+                <br>
+                Lycée René Cassin | Bayona, Francia
+              </li>
+              <li>
+                <span>2023</span><br />Traductora e intérprete
+                <br> Juegos Panamericanos y Parapanamericanos Santiago 2023
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>Escuela Americana de Traductores e Intérpretes | Santiago, Chile
+                <br>Traducción e interpretación de enlace mención inglés-francés
+                <br> <span>2017-2020, generación 2021</span>
+              </li>
+              <li>
+                Université Grenoble Alpes - CNED | Grenoble, France - à distance
+                <br>Diplôme d'Université Français Langue Étrangère
+                <br><span>2022-2023, generación 2023</span>
+              </li>
+              <li>Instituto Francés de Chile | Santiago, Chile
+                <br>Curso de perfeccionamiento de francés C1
+                <br><span>2022-2023, generación 2023</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+
+  <div id="services">
+    <div class="container hidden">
+      <h1 class="sub-title">Servicios</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Traducción</h2>
+          <p>
+            ¿Quieres que tu proyecto llegue a más clientes y a más audiencia? Esta puede ser tu opción más favorable.
+            Trabajo con proyectos de diversas áreas como medicina, minería, entretenimiento, entre otras. Este servicio
+            puede utilizarse para trabajos en formatos html, docx, pdf, txt, SRT, xlsx, entre otros. Disponible en tres
+            idiomas: español, inglés y francés
+          </p>
+          <a href="#">Ver más</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>Interpretación</h2>
+          <p>
+            ¿Buscas que tu presentación pueda ser entendida por más público? Te recomiendo esta opción. Sea cual sea tu
+            tema de ponencia, puedo estar allí para que todo el público pueda comprenderte. Cuento con los servicios de
+            interpretación de enlace, consecutiva y simultánea. Disponible en tres idiomas: español, inglés y francés.
+          </p>
+          <a href="#">Ver más</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Docencia</h2>
+          <p>
+            ¿Necesitas a una profesora de idiomas? Esta es tu sección. Puedo trabajar como profesora particular o como
+            profesora en algún establecimiento educativo. Trabajo con alumnos de diferentes niveles
+            (niños-adolescentes-adultos). Enfocada en diferentes metas, ya sea pasar un examen o aprender para hablar
+            fluido. Disponible en tres idiomas: español, inglés y francés.
+          </p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">
+        ¿Quieres echarle un vistazo a mis experiencias?
+      </h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="/IMG/Nicki1.jpg" alt="" />
+          <div class="layer">
+            <h2>Visita a Chile DTI gólbol</h2>
+            <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/IMG/Nicki2.jpg" alt="" />
+          <div class="layer">
+            <h2>COPACI</h2>
+            <h3>Intérprete simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/IMG/Nicki3.jpg" alt="" />
+          <div class="layer">
+            <h2>Comisiones médicas</h2>
+            <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- This button might be used now or in the future - Check with Nicole -->
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contacto</h1>
+          <a href="mailto:nboock.translator@gmail.com">
+            <p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com</p>
+          </a>
+          <a href="tel:+56962008751">
+            <p><i class="fa-solid fa-phone"></i> +56962008751</p>
+          </a>
+          <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank">
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a></p>
+          <!-- <div class="social-icons">
                         <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
                     </div> -->
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Nombre" required>
-                        <input type="email" name="Email" placeholder="Dirección de correo" required>
-                        <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="btn btn2">Enviar</button>
-                    </form>
-
-                    <span id="msg"></span>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="scrollTop" onclick="scrollToTop()">
-        <i class="fa-solid fa-arrow-up"></i>
-    </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Nombre" required>
+            <input type="email" name="Email" placeholder="Dirección de correo" required>
+            <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn btn2">Enviar</button>
+          </form>
 
-    <script
-      src="https://kit.fontawesome.com/a1f070a8c1.js"
-      crossorigin="anonymous"></script>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scrollTop" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
 
-      <script src="/scripts/scripts.js"></script>
-     
-     <script>
-            const observer = new IntersectionObserver((entries) =>{
-        entries.forEach((entry) =>{
-            if(entry.isIntersecting){
-                entry.target.classList.add("show");
-            }else{
-                entry.target.classList.remove("show");
-            }
-        })
+  <script src="https://kit.fontawesome.com/a1f070a8c1.js" crossorigin="anonymous"></script>
+
+  <script src="/scripts/scripts.js"></script>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      })
     }
     );
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
-      </script>
+  </script>
 
 
 </html>
