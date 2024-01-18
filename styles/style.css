@@ -186,7 +186,18 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+#skills ul{
+    display: flex;
+}
  
+.skills-left{
+    width: 400px;
+}
+
+.skills-right{
+    width: 400px;
+}
 
 /*  Services */
 
