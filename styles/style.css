@@ -59,7 +59,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ec648f;
+    background: #e20d46;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -86,11 +86,12 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ec648f;
+    color: #e20d46;
 }
 
 .header-text p span{
-    color: #ec648f;
+    color: #e20d46;
+    font-weight: bold;
 }
 
 .home{
@@ -101,11 +102,13 @@ nav ul li a:hover::after{
 /* ABOUT */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #ffffff;
+    height: 80vh;
 }
 
 #about img{
     border-radius: 10px;
+    height: 60vh;
 }
 
 .row{
@@ -149,7 +152,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #ec648f;
+    background: #e20d46;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -167,20 +170,31 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 25px 0;
+    margin-top: 20px;
 }
 
 .tab-links a:hover{
-    color: #ec648f;
+    color: #e20d46;
 }
 
 .tab-contents ul li span{
-    color: #bb5479;
-    font-size: 14px;
+    color: #f1a3b7;
+    font-size: 20px;
+}
+
+#skills ul li span{
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .tab-contents{
     display: none;
+}
+
+.tab-contents i{
+    color: #e20d46bd;
+    font-size: 30px;
 }
 
 .tab-contents.active-tab{
@@ -193,6 +207,11 @@ nav ul li a:hover::after{
  
 .skills-left{
     width: 400px;
+}
+
+.skills-left i, .skills-right i{
+    color: #e20d46bd;
+    font-size: 30px;
 }
 
 .skills-right{
@@ -212,13 +231,47 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
-.services-list div{
-    background: #2c2c2c;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+.services-list .s1{
+    background: #e20d4642;
+    padding: 35px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: justify;
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list .s1 div{
+            /* extra for animation */
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: 1s;
+}
+
+.services-list .s1 span{
+    color: rgb(185, 100, 100);
+    font-weight: bolder;
+}
+
+.services-list .s1:hover span{
+    color: black;
+    font-weight: bold;
+}
+
+.services-list .s1 h2{
+    color: #ffffff;
+}
+
+.services-list .s1 .btn{
+    background-color: #fafafa;
+    color: #2c2c2c;
+    width: 25%;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.services-list .s1 .btn:hover{
+    cursor: pointer;
 }
 
 .services-list div i{
@@ -240,8 +293,8 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
-    background: #8d5667;
+.services-list .s1:hover{
+    background: #e20d46;
     transform: translateY(-10px)
 }
 
@@ -249,6 +302,7 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 50px 0;
+    height: 100vh;
 }
 
 .work-list{
@@ -275,7 +329,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), #e20d46);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -299,7 +353,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ec648f;
+    color: #e20d46;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -342,6 +396,7 @@ nav ul li a:hover::after{
 
 .contact-right{
     flex-basis: 60%;
+    margin-top: 50px;
 }
 
 .contact-left p{
@@ -366,12 +421,12 @@ nav ul li a:hover::after{
 }
 
 .contact-left a:hover{
-    color: #ebb7c7;
+    color: #e20d46;
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #e20d46;
 }
 
 .contact-right form{
@@ -398,7 +453,7 @@ form .btn2{
 }
 
 #msg{
-    color: #ec648f;
+    color: #e20d46;
     margin-top: -40px;
     display: block;
 }
@@ -420,7 +475,7 @@ form .btn2{
 .scrollTop{
     width: 40px;
     height: 40px;
-    background-color: #ec648f;
+    background-color: #e20d46;
     position: fixed;
     bottom: 5px;
     right: 10px;
@@ -433,7 +488,7 @@ form .btn2{
 .scrollTop:hover{
     cursor: pointer;
     background-color: #262626;
-    color: #ec648f;
+    color: #e20d46;
 }
 
 /* .fa-arrow-up{

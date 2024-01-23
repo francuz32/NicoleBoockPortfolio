@@ -5,22 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NicoleBoock</title>
+  <link rel="stylesheet" href="/styles/popup.css">
   <link rel="stylesheet" href="/styles/style.css" />
   <link rel="stylesheet" href="/styles/mobile.css" />
   <link rel="icon" href="/IMG/Favicon - NB.png">
+
 </head>
 
 <body>
   <div id="header">
     <div class="container">
       <nav>
-        <img src="/IMG/Logo - NB.png" class="logo" />
+        <img src="" class="logo" />
         <ul id="sidemenu">
           <!-- Nav Option -->
           <li>
             <a href="#header" class="home" onclick="closemenu()">Inicio</a>
           </li>
-          <li><a href="#about" onclick="closemenu()">Sobre mí</a></li>
+          <li><a href="#about" onclick="closemenu()">Acerca de mí</a></li>
           <li><a href="#services" onclick="closemenu()">Servicios</a></li>
           <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
           <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
@@ -28,10 +30,10 @@
 
           <!-- Change Language -->
           <li>
-            <a href="indexFR.html"><img src="" alt="bandera Fr" /></a>
+            <a href="indexFR.html"><img src="/IMG/Francia.png" alt="bandera Fr" /></a>
           </li>
           <li>
-            <a href="indexEN.html"><img src="" alt="banderia RU" /></a>
+            <a href="indexEN.html"><img src="/IMG/UK.jpg" alt="banderia RU" /></a>
           </li>
         </ul>
 
@@ -69,8 +71,8 @@
             </p>
             <p class="tab-links" onclick="opentab('education')">Educación</p>
             <p class="tab-links">
-              <a
-                href="https://docs.google.com/document/d/1rmzvwrIjUuEo07T2dJE-0nJ1QnEmZwDf/edit?usp=drive_link&ouid=118063310771638022260&rtpof=true&sd=true">
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1lme7n8A2gTPt5g_sAUvsnofDIYlFADUG/view?usp=sharing">
                 Descargar CV</a>
             </p>
           </div>
@@ -78,6 +80,8 @@
           <div class="tab-contents active-tab" id="skills">
             <ul>
               <div class="skills-left">
+                <i class="fa-solid fa-bolt"></i>
+                <!-- <i class="fa-solid fa-book"></i> -->
                 <li><span>Lingüística</span></li>
                 <li><span>Traducción</span></li>
                 <li><span>Interpretación</span></li>
@@ -86,8 +90,10 @@
                 <li><span>Subtitulado</span></li>
               </div>
               <div class="skills-right">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <!-- <i class="fa-solid fa-chess-queen"></i> -->
                 <li><span>Responsabilidad</span></li>
-                <li><span>Colabiración</span></li>
+                <li><span>Colaboración</span></li>
                 <li><span>Paciencia</span></li>
                 <li><span>Comunicación</span></li>
                 <li><span>Resolución de problemas</span></li>
@@ -96,7 +102,8 @@
           </div>
 
           <div class="tab-contents" id="experience">
-            <p>Entre mis experiencias, puedes encontrar:</p>
+            <i class="fa-solid fa-briefcase"></i>
+            <!-- <p>Entre mis experiencias, puedes encontrar:</p> -->
             <ul>
               <li>
                 <span>2020</span><br />Traductora e intérprete
@@ -115,19 +122,22 @@
             </ul>
           </div>
           <div class="tab-contents" id="education">
+            <i class="fa-solid fa-graduation-cap"></i>
             <ul>
-              <li>Escuela Americana de Traductores e Intérpretes | Santiago, Chile
-                <br>Traducción e interpretación de enlace mención inglés-francés
-                <br> <span>2017-2020, generación 2021</span>
+              <li><span>2017-2020, generación 2021</span>
+                <br>
+                <p>Escuela Americana de Traductores e Intérpretes | Santiago, Chile
+                  <br>Traducción e interpretación de enlace mención inglés-francés
+                </p>
               </li>
               <li>
-                Université Grenoble Alpes - CNED | Grenoble, France - à distance
+                <span>2022-2023, generación 2023</span>
+                <br>Université Grenoble Alpes - CNED | Grenoble, France - à distance
                 <br>Diplôme d'Université Français Langue Étrangère
-                <br><span>2022-2023, generación 2023</span>
               </li>
-              <li>Instituto Francés de Chile | Santiago, Chile
+              <li><span>2022-2023, generación 2023</span>
+                <br>Instituto Francés de Chile | Santiago, Chile
                 <br>Curso de perfeccionamiento de francés C1
-                <br><span>2022-2023, generación 2023</span>
               </li>
             </ul>
           </div>
@@ -142,37 +152,45 @@
     <div class="container hidden">
       <h1 class="sub-title">Servicios</h1>
       <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Traducción</h2>
-          <p>
-            ¿Quieres que tu proyecto llegue a más clientes y a más audiencia? Esta puede ser tu opción más favorable.
-            Trabajo con proyectos de diversas áreas como medicina, minería, entretenimiento, entre otras. Este servicio
-            puede utilizarse para trabajos en formatos html, docx, pdf, txt, SRT, xlsx, entre otros. Disponible en tres
-            idiomas: español, inglés y francés
-          </p>
-          <a href="#">Ver más</a>
+        <div class="s1">
+          <div>
+            <i class="fa-solid fa-file-pen"></i>
+            <h2>Traducción</h2>
+            <p>
+              ¿Quieres que tu proyecto llegue a más clientes y a más audiencia? Trabajo con proyectos de diversas áreas
+              como <span>medicina, minería, entretenimiento, entre otras</span>. Este servicio puede utilizarse para trabajos en
+              formatos <span>html, docx, pdf, txt, SRT, xlsx, entre otros</span>. Disponible en tres idiomas: <span>español, inglés y
+              francés</span>.
+            </p>
+            <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
+          </div>
+          <div class="popup" id="popup">
+            <h2>Here's some information about my prices</h2>
+            <p>I'm worth every dollar, just for you to know</p>
+            <button type="button" onclick="closePopup()">Volver</button>
+          </div>
         </div>
-        <div>
-          <i class="fa-sharp fa-solid fa-crop"></i>
+
+        <div class="s1">
+          <i class="fa-solid fa-comments"></i>
           <h2>Interpretación</h2>
           <p>
-            ¿Buscas que tu presentación pueda ser entendida por más público? Te recomiendo esta opción. Sea cual sea tu
-            tema de ponencia, puedo estar allí para que todo el público pueda comprenderte. Cuento con los servicios de
-            interpretación de enlace, consecutiva y simultánea. Disponible en tres idiomas: español, inglés y francés.
+            ¿Buscas que tu presentación pueda ser entendida por más público? Sea cual sea tu tema de ponencia, puedo
+            estar allí para que todo el público pueda comprenderte. Cuento con los servicios de <span>interpretación de
+            enlace, consecutiva y simultánea</span>. Disponible en tres idiomas: <span>español, inglés y francés</span>.
           </p>
-          <a href="#">Ver más</a>
+          <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
         </div>
-        <div>
-          <i class="fa-brands fa-app-store-ios"></i>
+        <div class="s1">
+          <i class="fa-solid fa-chalkboard-user"></i>
           <h2>Docencia</h2>
           <p>
-            ¿Necesitas a una profesora de idiomas? Esta es tu sección. Puedo trabajar como profesora particular o como
-            profesora en algún establecimiento educativo. Trabajo con alumnos de diferentes niveles
-            (niños-adolescentes-adultos). Enfocada en diferentes metas, ya sea pasar un examen o aprender para hablar
-            fluido. Disponible en tres idiomas: español, inglés y francés.
+            ¿Necesitas a una profesora de idiomas? Puedo trabajar como profesora particular o como profesora en algún
+            establecimiento educativo. Trabajo con <span>alumnos de diferentes niveles</span> (niños-adolescentes-adultos). Enseñanza
+            enfocada en diferentes metas, ya sea pasar un examen o aprender a hablar fluido. Disponible en tres idiomas:
+            <span>español, inglés y francés</span>.
           </p>
-          <a href="#">Ver más</a>
+          <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
         </div>
       </div>
     </div>
@@ -211,7 +229,7 @@
         </div>
       </div>
       <!-- This button might be used now or in the future - Check with Nicole -->
-      <a href="#" class="btn">See More</a>
+      <!-- <a href="#" class="btn">See More</a> -->
     </div>
   </div>
 
@@ -236,14 +254,13 @@
                     </div> -->
         </div>
         <div class="contact-right">
+          <span id="msg"></span>
           <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Nombre" required>
             <input type="email" name="Email" placeholder="Dirección de correo" required>
             <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
             <button type="submit" class="btn btn2">Enviar</button>
           </form>
-
-          <span id="msg"></span>
         </div>
       </div>
     </div>
@@ -269,6 +286,19 @@
     );
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup")
+    }
+
+    function closePopup() {
+      popup.classList.remove("open-popup")
+    }
+
   </script>
 
 
