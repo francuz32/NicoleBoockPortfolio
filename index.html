@@ -158,15 +158,24 @@
             <h2>Traducción</h2>
             <p>
               ¿Quieres que tu proyecto llegue a más clientes y a más audiencia? Trabajo con proyectos de diversas áreas
-              como <span>medicina, minería, entretenimiento, entre otras</span>. Este servicio puede utilizarse para trabajos en
-              formatos <span>html, docx, pdf, txt, SRT, xlsx, entre otros</span>. Disponible en tres idiomas: <span>español, inglés y
-              francés</span>.
+              como <span>medicina, minería, entretenimiento, entre otras</span>. Este servicio puede utilizarse para
+              trabajos en
+              formatos <span>html, docx, pdf, txt, SRT, xlsx, entre otros</span>. Disponible en tres idiomas:
+              <span>español, inglés y
+                francés</span>.
             </p>
             <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
           </div>
           <div class="popup" id="popup">
-            <h2>Here's some information about my prices</h2>
-            <p>I'm worth every dollar, just for you to know</p>
+            <p>Por cada proyecto, hay un valor diferente. Todo proyecto considera el volumen de trabajo, el formato y la
+              combinación de idiomas. El volumen de trabajo considera, además, la dificultad del texto.
+              <br><br>
+              Este servicio lo valorizo en pesos chilenos.
+              <br><br>
+              Para saber los valores esperados de tu proyecto, contáctame y te entregaré una cotización y te ofreceré
+              una reunión explicativa online para resolver posibles dudas.
+
+            </p>
             <button type="button" onclick="closePopup()">Volver</button>
           </div>
         </div>
@@ -177,20 +186,43 @@
           <p>
             ¿Buscas que tu presentación pueda ser entendida por más público? Sea cual sea tu tema de ponencia, puedo
             estar allí para que todo el público pueda comprenderte. Cuento con los servicios de <span>interpretación de
-            enlace, consecutiva y simultánea</span>. Disponible en tres idiomas: <span>español, inglés y francés</span>.
+              enlace, consecutiva y simultánea</span>. Disponible en tres idiomas: <span>español, inglés y
+              francés</span>.
           </p>
-          <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
+          <button type="submit" class="btn" onclick="openPopupMid()">Ver más</button>
+          <div class="popupMid" id="popupMid">
+            <p>Los valores por este tipo de servicio varían según el tipo de interpretación, el tiempo de
+              interpretación, la dificultad y la combinación idiomática.
+              <br><br>
+              Este servicio lo valorizo en unidad de fomento chilena (UF).
+              <br><br>
+              Para saber los valores esperados de tu proyecto, contáctame y te entregaré una cotización y te ofreceré
+              una reunión explicativa online para resolver posibles dudas.
+            </p>
+            <button type="button" onclick="closePopupMid()">Volver</button>
+          </div>
         </div>
+
         <div class="s1">
           <i class="fa-solid fa-chalkboard-user"></i>
           <h2>Docencia</h2>
           <p>
             ¿Necesitas a una profesora de idiomas? Puedo trabajar como profesora particular o como profesora en algún
-            establecimiento educativo. Trabajo con <span>alumnos de diferentes niveles</span> (niños-adolescentes-adultos). Enseñanza
+            establecimiento educativo. Trabajo con <span>alumnos de diferentes niveles</span>
+            (niños-adolescentes-adultos). Enseñanza
             enfocada en diferentes metas, ya sea pasar un examen o aprender a hablar fluido. Disponible en tres idiomas:
             <span>español, inglés y francés</span>.
           </p>
-          <button type="submit" class="btn" onclick="openPopup()">Ver más</button>
+          <button type="submit" class="btn" onclick="openPopupEnd()">Ver más</button>
+          <div class="popupEnd" id="popupEnd">
+            <p>Este servicio tiene dos aristas. A través de este medio, solo ofrezco la cotización por mis clases particulares, ya que trabajar para un establecimiento con grupos de personas es otro tipo más complejo de acuerdo.
+              <br><br>
+              Este servicio lo valorizo en pesos chilenos.
+              <br><br>
+              Para saber los valores de mis clases particulares, contáctame y te entregaré una cotización y te ofreceré una reunión explicativa online para resolver posibles dudas.
+              </p>
+            <button type="button" onclick="closePopupEnd()">Volver</button>
+          </div>
         </div>
       </div>
     </div>
@@ -208,7 +240,7 @@
           <div class="layer">
             <h2>Visita a Chile DTI gólbol</h2>
             <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="/ExpES/ExpOne.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
@@ -216,7 +248,7 @@
           <div class="layer">
             <h2>COPACI</h2>
             <h3>Intérprete simultánea en español-inglés</h3>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="/ExpES/ExpTwo.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
@@ -224,7 +256,7 @@
           <div class="layer">
             <h2>Comisiones médicas</h2>
             <h3>Intérprete consecutiva y simultánea en español-inglés</h3>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="/ExpES/ExpThree.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
@@ -290,6 +322,8 @@
 
   <script>
     let popup = document.getElementById("popup");
+    let popupMid = document.getElementById("popupMid");
+    let popupEnd = document.getElementById("popupEnd");
 
     function openPopup() {
       popup.classList.add("open-popup")
@@ -297,6 +331,22 @@
 
     function closePopup() {
       popup.classList.remove("open-popup")
+    }
+
+    function openPopupMid() {
+      popupMid.classList.add("open-popupMid")
+    }
+
+    function closePopupMid() {
+      popupMid.classList.remove("open-popupMid")
+    }
+
+    function openPopupEnd() {
+      popupEnd.classList.add("open-popupEnd")
+    }
+
+    function closePopupEnd() {
+      popupEnd.classList.remove("open-popupEnd")
     }
 
   </script>

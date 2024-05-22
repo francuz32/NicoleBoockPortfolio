@@ -249,12 +249,12 @@ nav ul li a:hover::after{
 }
 
 .services-list .s1 span{
-    color: rgb(185, 100, 100);
+    color: #ec648f;
     font-weight: bolder;
 }
 
 .services-list .s1:hover span{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 

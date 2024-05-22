@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/Exp.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" />
+                <ul id="sidemenu">
+                    <!-- Nav Option -->
+                    <li>
+                        <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+                    </li>
+                    <li><a href="/index.html" onclick="closemenu()">Volver la página principal</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+                    <!-- <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+                    
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i> -->
+
+                    <!-- Change Language -->
+                    <li>
+                        <a href="indexFR.html"><img src="/IMG/Francia.png" alt="bandera Fr" /></a>
+                    </li>
+                    <li>
+                        <a href="indexEN.html"><img src="/IMG/UK.jpg" alt="banderia RU" /></a>
+                    </li>
+                </ul>
+
+                <!-- Menu Bar for Small Devices -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pList">
+        <ul>
+            <a href="/ExpES/ExpOne.html"><li>Gólbol</li></a>
+            <a href="/ExpES/ExpTwo.html"><li>COPACI</li></a>
+            <a href="/ExpES/ExpThree.html"><li>Comisión Médica</li></a>
+        </ul>
+    </div>
+
+    <div class="textContainer">
+
+        <h1>Visita a Chile DTI gólbol</h1>
+        <h2>Intérprete consecutiva y simultánea en español-inglés</h2>
+        <p>Durante mi trabajo como intérprete en los Juegos Parapanamericanos Santiago 2023, tuve el agrado de servir
+            como
+            intérprete consecutiva y simultánea para el Director Técnico Internacional de gólbol, Bülent Kimyon.</p>
+
+        <div class="f1">
+
+        </div>
+
+        <p> En su visita, pude acompañarlo a una jornada de visita al recinto en donde se construía el gimnasio en el
+            que se
+            harían las competencias de dicho deporte. Junto con el equipo dedicado para gólbol y el venue manager del
+            Estadio Nacional, recorrimos el complejo deportivo y se le pudo mostrar los avances en la construcción. Pude
+            ayudar a que el DTI, quién no habla español, pudiera entender a los guías. En esta visita, se tomaron
+            decisiones
+            relevantes para el desarrollo de los futuros encuentros que se llevarían a cabo en los Juegos
+            Parapanamericanos.</p>
+
+        <div class="f2"></div>
+
+        <p> Además, pude trabajar como intérprete consecutiva y simultánea en la capacitación de jueces y árbitros de
+            gólbol
+            de Chile, dictada por el DTI. Estas dos jornadas fueron una excelente experiencia en la que todos los
+            presentes
+            pudimos aprender sobre las reglas del deporte y así estar listos ante los siguientes desafíos. El señor
+            Bülent
+            fue muy amable con el equipo de LAN y me siento muy agradecida por su profesionalismo y humildad.
+        </p>
+
+        <div class="btnExContainerOne">
+            <a href="/ExpES/ExpTwo.html">Siguiente</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <a href="mailto:nboock.translator@gmail.com">
+                        <p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com
+                    </a></p>
+                    <a href="tel:+56962008751">
+                        <p><i class="fa-solid fa-phone"></i> +56962008751
+                    </a></p>
+                    <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank">
+                        <p><i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a></p>
+                    <!-- <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </div> -->
+                </div>
+                <div class="contact-right">
+                    <span id="msg"></span>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Dirección de correo" required>
+                        <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/a1f070a8c1.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function open(){
+        var menu = document.getElementById("portfolioMenu")
+        menu.classList.remove("")
+        menu.classList.add("show")
+    }
+</script>
+
+</html>

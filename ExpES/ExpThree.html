@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/Exp.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" />
+                <ul id="sidemenu">
+                    <!-- Nav Option -->
+                    <li>
+                        <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+                    </li>
+                    <li><a href="/index.html" onclick="closemenu()">Volver la página principal</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+
+                    <!-- <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i> -->
+
+                    <!-- Change Language -->
+                    <li>
+                        <a href="indexFR.html"><img src="/IMG/Francia.png" alt="bandera Fr" /></a>
+                    </li>
+                    <li>
+                        <a href="indexEN.html"><img src="/IMG/UK.jpg" alt="banderia RU" /></a>
+                    </li>
+                </ul>
+
+                <!-- Menu Bar for Small Devices -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pList">
+        <ul>
+            <a href="/ExpES/ExpOne.html"><li>Gólbol</li></a>
+            <a href="/ExpES/ExpTwo.html"><li>COPACI</li></a>
+            <a href="/ExpES/ExpThree.html"><li>Comisión Médica</li></a>
+        </ul>
+    </div>
+
+    <div class="textContainer">
+
+        <h1>Comisiones médicas</h1>
+        <h2>Intérprete consecutiva y simultánea en español-inglés
+        </h2>
+        <p>Durante los Juegos Panamericanos y Parapanamericanos Santiago 2023 tuve el privilegio de trabajar como
+            intérprete simultánea y de susurrada de dos comisiones muy importantes. </p>
+
+        <div class="f1">
+
+        </div>
+
+        <p>Primero, me tocó colaborar en las reuniones diarias de la Comisión Médica de Panam Sports. En estas reuniones
+            se trataban todas las situaciones relevantes en cuanto a la salud y protección de los atletas, trabajadores,
+            colaboradores y voluntarios de los Juegos Panamericanos. Día a día, se trabajaba para asegurar que los
+            Juegos pudieran seguir en pie. Este trabajo me dio la confianza de crecer como profesional y de conocer a un
+            gran panel de expertos, quienes me recibieron con brazos abiertos. Estoy muy orgullosa de también haber
+            ayudado en la subcomisión de dopaje. En esta subcomisión no solo servía como intérprete, sino también como
+            traductora oficial para documentos médicos.
+        </p>
+
+        <div class="f2"></div>
+
+        <p> En segunda instancia, me tocó trabajar en las reuniones diarias de la Comisión Médica del Comité Paralímpico
+            de las Américas (APC) y del International Paralympic Committee (IPC) como intérprete simultánea. Nuevamente,
+            en estas reuniones diarias se trabajaba para revisar aquellas incidencias importantes relacionadas con la
+            salud, tratamiento y protección de los atletas, trabajadores, colaboradores y voluntarios de los Juegos
+            Parapanamericanos. A diferencia de la primera experiencia, se agregó un nivel mayor de complejidad dado a la
+            naturaleza médica de las personas involucradas en los Juegos. Aquí, pude enamorarme de diversos deportes que
+            le daban oportunidades a atletas con diferentes discapacidades. Pude aprender de profesionales como Raúl
+            Smith, Todd Hayano, Judith Van Der Veen, Marcelo Patricio y Manos Bogdos. Profesionales que no solo
+            demostraron ser grandes conocedores de sus disciplinas, sino también grandes personas al enseñarme todo
+            aquello que en un principio no lograba entender.
+
+        </p>
+
+        <div class="btnExContainerOne">
+            <a href="/ExpES/ExpTwo.html">Anterior</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <a href="mailto:nboock.translator@gmail.com">
+                        <p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com
+                    </a></p>
+                    <a href="tel:+56962008751">
+                        <p><i class="fa-solid fa-phone"></i> +56962008751
+                    </a></p>
+                    <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank">
+                        <p><i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a></p>
+                    <!-- <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </div> -->
+                </div>
+                <div class="contact-right">
+                    <span id="msg"></span>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Dirección de correo" required>
+                        <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/a1f070a8c1.js" crossorigin="anonymous"></script>
+<script>
+    function scrollToTop(){
+      window.scrollTo(0,0);
+  }
+</script>
+
+</html>

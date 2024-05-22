@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/Exp.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" />
+                <ul id="sidemenu">
+                    <!-- Nav Option -->
+                    <li>
+                        <a href="#header" class="home" onclick="closemenu()">Inicio</a>
+                    </li>
+                    <li><a href="/index.html" onclick="closemenu()">Volver la página principal</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+
+                    <!-- <li><a href="#services" onclick="closemenu()">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portafolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i> -->
+
+                    <!-- Change Language -->
+                    <li>
+                        <a href="indexFR.html"><img src="/IMG/Francia.png" alt="bandera Fr" /></a>
+                    </li>
+                    <li>
+                        <a href="indexEN.html"><img src="/IMG/UK.jpg" alt="banderia RU" /></a>
+                    </li>
+                </ul>
+
+                <!-- Menu Bar for Small Devices -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pList">
+        <ul>
+            <a href="/ExpES/ExpOne.html"><li>Gólbol</li></a>
+            <a href="/ExpES/ExpTwo.html"><li>COPACI</li></a>
+            <a href="/ExpES/ExpThree.html"><li>Comisión Médica</li></a>
+        </ul>
+    </div>
+
+    <div class="textContainer">
+        <h1>COPACI</h1>
+        <h2>Intérprete simultánea en español-inglés</h2>
+        <p>En esta ocasión, tuve la oportunidad de interpretar para esta reunión que congregó a representantes de todas
+            las Américas en torno al Paraciclismo. Fue una experiencia que llegó rápidamente como una solicitud urgente.
+            Logramos cumplir como equipo y, personalmente, me ayudó enormemente para estar lista como intérprete en poco
+            tiempo. Fue interesante ser parte de esta reunión y gratificante ver que mis servicios ayudó a
+            representantes de las islas del caribe a entender los conflictos y soluciones propuestos. </p>
+
+        <div class="f1">
+        </div>
+
+        <div id="btnExContainer">
+            <div class="btnEx">
+                <a href="/ExpES/ExpOne.html">Anterior</a>
+            </div>
+
+            <div class="btnEx">
+                <a href="/ExpES/ExpThree.html">Siguiente</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <a href="mailto:nboock.translator@gmail.com">
+                        <p><i class="fa-solid fa-paper-plane"></i> nboock.translator@gmail.com
+                    </a></p>
+                    <a href="tel:+56962008751">
+                        <p><i class="fa-solid fa-phone"></i> +56962008751
+                    </a></p>
+                    <a href="https://www.linkedin.com/in/nicole-boock/" target="_blank">
+                        <p><i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a></p>
+                    <!-- <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </div> -->
+                </div>
+                <div class="contact-right">
+                    <span id="msg"></span>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Dirección de correo" required>
+                        <textarea name="Message" rows="6" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/a1f070a8c1.js" crossorigin="anonymous"></script>
+<script>
+    function scrollToTop(){
+      window.scrollTo(0,0);
+  }
+</script>
+
+</html>
